@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php include 'includes/topbar.php'; ?>
+<?php include PROJECT_ROOT . 'includes/topbar.php'; ?>
 
 <?php /*
 <!-- Hero container -->
@@ -41,7 +41,7 @@
                 Derniers articles
             </h3>
 
-            <?php include 'includes/post.php'?>
+            <?php include PROJECT_ROOT . 'includes/post.php'?>
 
             <!-- Another post example TODO Remove -->
             <div class="blog-post">
@@ -78,13 +78,13 @@
 
         </div><!-- /.blog-main -->
 
-        <?php include 'includes/sidebar.php' ?>
+        <?php include PROJECT_ROOT . 'includes/sidebar.php' ?>
 
     </div><!-- /.row -->
 
 </main><!-- /.container -->
 
-<?php include 'includes/footer.php' ?>
+<?php include PROJECT_ROOT . 'includes/footer.php' ?>
 
 </body>
 </html>
