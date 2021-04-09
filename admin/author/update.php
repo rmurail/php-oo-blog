@@ -48,6 +48,21 @@ if(isset($_POST['author_update'])) {
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Tableau de bord</h1>
+
+                <form acion="/admin/author/update.php?id=<?php echo $author->getId(); ?>" method="post">
+                <div class="form-group row">
+                    <label for="title" class="col-sm-2 col-form-label">Titre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $author->getName(); ?>">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </div>
+            </form>
+
             </div>
 
             <!-- TODO Add content -->

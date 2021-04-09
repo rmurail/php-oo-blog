@@ -31,6 +31,17 @@ class AuthorManager
             'name' => $author->getName(),
             ]);
     }
+
+    public function update(Author $author) {
+        $sql ='UPDATE author set name=:name WHERE id=:id LIMIT 1';
+
+        $update = $this->connection->prepare($sql);
+
+        $update->execute([
+            'id'=> $author->getId(),
+            'name'=> $author->getName(),
+            ]);
+    }
 }
 
 ?>
